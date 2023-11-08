@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: central-db
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: central-db
+    app.kubernetes.io/part-of: acs
+  name: central-db
+spec:
+  ports:
+  - port: 5432
+    targetPort: 5432
+  selector:
+    app.kubernetes.io/instance: central-db
+status:
+  loadBalancer: {}
