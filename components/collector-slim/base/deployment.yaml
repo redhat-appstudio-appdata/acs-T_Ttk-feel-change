@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: acs
   name: collector-slim
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: collector-slim
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector-slim@sha256:cadd12df56812e00b700b5cc9bac905fb48b31d645ea7b674dd84aed81f79f35
         name: my-python
         ports:
         - containerPort: 8081
