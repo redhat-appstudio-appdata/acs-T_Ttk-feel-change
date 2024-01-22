@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector-slim@sha256:7e7da27789b767b7abe2ce878e06abe657078247ebaeaa4109d4313613f13fab
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector-slim@sha256:b875b453bfe2c9b29af6ed886c814630cfd21ac34952f5805f558a3dffe11f45
         name: my-python
         resources: {}
 status: {}
