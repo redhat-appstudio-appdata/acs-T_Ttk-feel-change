@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: central-db
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/central-db@sha256:7e882afa2a3bfc500c325e4b61fc794fd6119704d2d8d80a99e9799c7de73921
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/central-db@sha256:9dc6b987fa953703e73a68a5aa76edde0eeb326887eba269efa87c9b824cbaab
         imagePullPolicy: Always
         name: container-image
         ports:
