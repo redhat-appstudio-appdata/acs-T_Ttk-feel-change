@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: collector-slim
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector-slim@sha256:38136957620d79ccd22e8c230990c7b8b09488ac7f12e9bf6f48e8edd385dcd2
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector-slim@sha256:cd50f75ceba5be98eab2468d1adee200c368d07afb47350d9acd54069b972dff
         name: my-python
         ports:
         - containerPort: 8081
