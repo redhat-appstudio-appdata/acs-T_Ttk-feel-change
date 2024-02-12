@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: main
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/main@sha256:d9f00712c3d912a7997572ea6ae3ca0de43fdbb20cb3b999453d42bdad00ca88
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/main@sha256:bc068f090849d51e33cfaab8ccf02662aa524ae6f64ec071d1bf8dc4ab049afe
         imagePullPolicy: Always
         name: container-image
         ports:
