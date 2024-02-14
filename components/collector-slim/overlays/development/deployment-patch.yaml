@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: collector-slim
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
@@ -11,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector-slim@sha256:9ecf0888f8951d8affa99a5d76fd6f2f369e1d7d585c9c7b7e8b30241b6f3b3e
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector-slim@sha256:c64528a9f2671e2131537dca8ed16563385ee1e9990c406530670c27a215aa4b
         name: my-python
         resources: {}
 status: {}
