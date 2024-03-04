@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: scanner-db-slim
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: scanner-db-slim
+    app.kubernetes.io/part-of: acs
+  name: scanner-db-slim
+spec:
+  replicas: 0
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: scanner-db-slim
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/instance: scanner-db-slim
+    spec:
+      containers:
+      - image: image
+        imagePullPolicy: Always
+        name: container-image
+        ports:
+        - containerPort: 9090
+        resources:
+          requests:
+            cpu: 10m
+            memory: 10Mi
+status: {}
