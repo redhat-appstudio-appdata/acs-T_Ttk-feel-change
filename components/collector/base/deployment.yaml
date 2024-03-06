@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: collector
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector@sha256:20d63818118ef178c3fc5c3a9a9c4c58634a89d2087556b3b598e6db76827afd
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/collector@sha256:b92bd6605621fb623012c20457b611e102324ebdc2086c82c02ef15314e1eb27
         imagePullPolicy: Always
         name: container-image
         ports:
