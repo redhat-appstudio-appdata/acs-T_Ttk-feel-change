@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: scanner-db-slim
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/scanner-db-slim@sha256:b7fc108337dadd8912cb28d7f201d5fdfc4b28e11bc3ac9f58b0b8affa64d712
+        name: my-go
+        resources: {}
+status: {}
