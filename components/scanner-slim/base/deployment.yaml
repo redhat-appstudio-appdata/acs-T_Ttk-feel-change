@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: scanner-slim
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/scanner-slim@sha256:859c78ce934527eb37e9fb7aa81312516e5a575f1e2e05111ea051eed8abdea3
         name: my-go
         ports:
         - containerPort: 8081
