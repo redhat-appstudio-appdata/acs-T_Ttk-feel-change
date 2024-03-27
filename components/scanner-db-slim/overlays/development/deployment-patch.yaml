@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/scanner-db-slim@sha256:86598d2ea09a2c0fd8328c98bea158ad6ba552c610ee2cb42c4ad8f2546b7dcc
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/scanner-db-slim@sha256:8a1019437eeefe0931c0c6f35d86c8269410b8035b3572f8ae0e44caec42e484
         name: my-go
         resources: {}
 status: {}
