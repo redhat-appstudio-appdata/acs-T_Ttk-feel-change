@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: scanner-v4-db
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/scanner-v4-db@sha256:04da9e9bc4aee269833aa3e52c899ee11a28455234e75cf8ce4005fcb45f1994
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/scanner-v4-db@sha256:44321f2636c704d16426e4c4fcecadeb2d063ddf96b834a01497615c5e9e664e
         imagePullPolicy: Always
         name: container-image
         ports:
