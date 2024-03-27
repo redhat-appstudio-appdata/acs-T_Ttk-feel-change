@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: scanner-db
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/scanner-db@sha256:0173ffbdab7c98879ae90dcb3137ed8e98dcdf3fb527f01bb9f5a2e7f5f2e50c
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/acs/scanner-db@sha256:d0a6ca1aabbc2ba5c8bd7bd8a516f212f3dc47895afe27e507f50cbcc3d0e468
         name: my-go
         ports:
         - containerPort: 8081
